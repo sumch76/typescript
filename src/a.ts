@@ -72,27 +72,49 @@
 
 
 
-interface User{
-    firstName:string;
-    lastName:string;
-    age:number,
-    email?:string;//optional using ?
-};
-function isLegal(user:User)
-{
-    if(user.age>18)
-{
- return true;
-}
-else{
-    return false;
-}
-}
+// interface User{
+//     firstName:string;
+//     lastName:string;
+//     age:number,
+//     email?:string;//optional using ?
+// };
+// function isLegal(user:User)
+// {
+//     if(user.age>18)
+// {
+//  return true;
+// }
+// else{
+//     return false;
+// }
+// }
 
-let result=isLegal({
-    firstName:"sumit",
-    lastName:"chaubey",
-    age:18
-})
-console.log(result);
+// let result=isLegal({
+//     firstName:"sumit",
+//     lastName:"chaubey",
+//     age:18
+// })
+// console.log(result);
 
+
+interface Employee {
+    name: string;
+    startDate: Date;
+  }
+  
+  interface Manager {
+    name: string;
+    department: string;
+  }
+  
+  type TeamLead = Employee & Manager;
+  
+  const teamLead: TeamLead = {
+    name: "Sumit",
+    startDate: new Date(),
+    department: "Software Developer",
+  };
+  
+  console.log(teamLead.name);
+  
+  console.log(teamLead.department);

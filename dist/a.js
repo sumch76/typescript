@@ -1,17 +1,10 @@
 "use strict";
 // function greet(firstname:string){
 //     console.log("hello"+firstname);
-function isLegal(user) {
-    if (user.age > 18) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-let result = isLegal({
-    firstName: "sumit",
-    lastName: "chaubey",
-    age: 18
-});
-console.log(result);
+const teamLead = {
+    name: "Sumit",
+    startDate: new Date(),
+    department: "Software Developer",
+};
+console.log(teamLead.name);
+console.log(teamLead.department);
