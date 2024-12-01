@@ -97,18 +97,39 @@
 // console.log(result);
 
 
-interface Employee {
+// interface Employee {
+//     name: string;
+//     startDate: Date;
+//   }
+  
+//   interface Employee{
+//     name: string;
+//     department: string;
+//   }
+  
+//   type TeamLead = Employee & Employee;
+  
+//   const teamLead: TeamLead = {
+//     name: "Sumit",
+//     startDate: new Date(),
+//     department: "Software Developer",
+//   };
+  
+//   console.log(teamLead.name);
+  
+//   console.log(teamLead.department);
+
+type Employee= {
     name: string;
     startDate: Date;
   }
   
-  interface Manager {
+  interface Manager{
     name: string;
     department: string;
   }
   
-  type TeamLead = Employee & Manager;
-  
+  type TeamLead = Employee & Manager
   const teamLead: TeamLead = {
     name: "Sumit",
     startDate: new Date(),
